@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit brust</title>
+    <!-- cdn for tailwind and daisyUI-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--lato font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- configure tailwind styles-->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-color': '#F85559',
+                    },
+                },
+            },
+        }
+    </script>
+
+    <!--lato font style-->
+    <style>
+        .font-lato {
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="font-lato font-medium text-white">
+    <header class="container mx-auto">
+        <div
+            class="flex justify-between md:justify-around items-center px-8 py-4 lg:bg-primary-color rounded-[550px] mt-10 mb-10">
+
+            <div class="hidden lg:flex flex-1">
+                <ul class="menu menu-horizontal px-3">
+                    <li><a>Home</a></li>
+                    <li><a>About Us</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>All Fruits</a></li>
+                </ul>
+            </div>
+
+            <div class="flex md:flex-1 lg:justify-center items-center gap-5 lg:pr-10">
+                <img class="w-10" src="images/logo.png" alt="Fruit brust">
+                <h3 class="text-black lg:text-white font-bold text-2xl lg:text-4xl">Fruit Burst</h3>
+            </div>
+
+            <div class="flex-1 flex justify-end lg:hidden w-8">
+                <img src="images/hamburger-menu.svg" alt="Hamburger menu icon">
+                </nav>
+            </div>
+
+            <div class="lg:flex-1 hidden lg:flex lg:justify-end">
+                <input type="text" placeholder="Search here"
+                    class="relative input lg:w-[75%] input-bordered rounded-full" />
+            </div>
+        </div>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>
